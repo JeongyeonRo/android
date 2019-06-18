@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SoundActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/vib"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="진동"
+        android:textSize="30dp"
+        android:layout_marginTop="100dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="시스템 소리"
+        android:textSize="30dp"
+        android:id="@+id/syssound"/>
+
+    <Button
+        android:id="@+id/ressound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="자원 소리"
+        android:textSize="30dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="중지"
+        android:textSize="30dp"
+        android:id="@+id/stop"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="토스트"
+        android:textSize="30dp"
+        android:id="@+id/toast"/>
+
+</LinearLayout>

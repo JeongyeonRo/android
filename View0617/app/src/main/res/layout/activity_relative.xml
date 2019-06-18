@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeActivity"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="121dp"
+        android:layout_height="99dp"
+        android:src="@drawable/pikachu"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="15dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pikachu"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/image"
+        android:id="@+id/name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_alignLeft="@id/name"
+        android:layout_marginTop="20dp"
+        android:text="pika pika"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2019.06.17"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@id/name"/>
+
+</RelativeLayout>
