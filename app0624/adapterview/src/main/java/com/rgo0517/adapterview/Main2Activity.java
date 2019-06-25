@@ -92,6 +92,7 @@ public class Main2Activity extends AppCompatActivity {
             SparseBooleanArray sba = listView.getCheckedItemPositions();
             //선택이 된 경우에만 동작
             if(sba.size() >= 0){
+                //반복문 안에서 데이터의 집합(List, Set, Map)등의 삽입, 삭제 작업을 하는 경우의 데이터 개수 문제
                 for(int i=0; i<sba.size(); i=i+1){
                     if(sba.get(sba.size()-i-1) == true){
                         list.remove(sba.size()-i-1);
