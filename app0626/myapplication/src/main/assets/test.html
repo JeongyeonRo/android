@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>From Tag</title>
+</head>
+<body>
+	<!-- action은 폼의 데이터를 처리할 서버 URL
+		method를 생략하거나 get을 설정하면 폼의 입력 내용이 주소 표시줄에 출력됩니ㅏㄷ.
+		post를 설정하면 주소 표시줄에 출력되지 않습니다. -->
+	<form action="server.jsp" method="post">
+		write in a line<input type="text" name="id"/><br />
+		password<input type="text" name="pw"/><br />
+		<!-- 라디오 버튼이나 체크박스를 하나의 그룹으로 만들고자 할 때는 name을 동일하게 만들면 됩니다. 
+			라디오 버튼은 필 수 입력을 받을 때 사용, 하나는 반드시 checked 속성을 설정해 놓는 것이 좋습니다.-->
+		<fieldset>
+			<legend> 성별 </legend>
+			<!-- radio와 checkbox는 name과 value를 설정해야 합니다.
+				name을 가지고 서버에서 읽어내면 value 값을 읽어냅니다.
+				value가 없으면 on 또는 off -->	
+			<input type ="radio" name="gender" checked="checked"> 남
+			<input type = "radio" name="gender"> 여 		
+		
+		</fieldset>
+		첨부파일<input type="file" /><br />
+		
+		<!-- option에서도 value는 필 -->
+		년도<select name="year">
+			<option value="2019">2019</option>
+			<option value="2018">2018</option>
+			<option value="2017">2017</option>
+			<option value="2016">2016</option>
+			<option value="2015">2015</option>
+			<option value="2014">2014</option>
+		</select><br />
+		
+		<textarea rows="10" cols="30"></textarea><br />
+		<button>버튼태그</button>
+		<!-- submit 과 동일한 기 -->
+		
+		<!-- 전부 버튼이 만들어 집니다.
+			button은 value를 설정해서 버튼 위에 텍스트가 출력되도록 해 주어야 합니다. -->
+		<input type="button" value="button"/>
+		<!-- submit은 form의 action이 설정되면 설정된 곳으로 데이터를 전송하는 역할을 수행 -->
+		<input type="submit" value="login"/>
+		<!-- reset은 form 안의 입력 내용을 전부 삭제 -->
+		<input type="reset" value="delete"/>
+	</form>
+</body>
+</html>

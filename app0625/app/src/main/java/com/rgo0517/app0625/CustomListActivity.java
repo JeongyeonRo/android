@@ -1,6 +1,5 @@
 package com.rgo0517.app0625;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.animation.AlphaAnimation;
@@ -9,6 +8,8 @@ import android.view.animation.AnimationSet;
 import android.view.animation.LayoutAnimationController;
 import android.view.animation.TranslateAnimation;
 import android.widget.ListView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,8 +34,7 @@ public class CustomListActivity extends AppCompatActivity {
         vo.name = "Oracle";
         list.add(vo);
 
-        MyAdapter adapter = new MyAdapter(
-                CustomListActivity.this, R.layout.icontext, list);
+       MyAdapter adapter = new MyAdapter(CustomListActivity.this, R.layout.icontext,list);
 
         ListView listView = (ListView)findViewById(R.id.customlistview);
         listView.setAdapter(adapter);

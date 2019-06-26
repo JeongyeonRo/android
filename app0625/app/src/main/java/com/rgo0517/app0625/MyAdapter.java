@@ -26,9 +26,7 @@ public class MyAdapter extends BaseAdapter {
     List<VO> data;
 
     //생성자에서 위의 3개를 주입
-    public MyAdapter(
-            Context context, int layout,
-            List<VO> data) {
+    public MyAdapter(Context context, int layout, List<VO> data) {
         this.context = context;
         this.layout = layout;
         this.data = data;

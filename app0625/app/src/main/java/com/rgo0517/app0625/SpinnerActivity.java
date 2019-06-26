@@ -40,7 +40,7 @@ public class SpinnerActivity extends AppCompatActivity {
 
         //array.xml 에 만든 배열을 가져오기
         ar = getResources().getStringArray(R.array.nations);
-        //spinner에서
+        //spinner에서 선택을 했을 때의 이벤트 처리
         spinner.setOnItemSelectedListener(
                 new Spinner.OnItemSelectedListener(){
                     //선택했을 때 호출되는 메소드
