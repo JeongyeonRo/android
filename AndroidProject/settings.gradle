@@ -1,1 +1,1 @@
-include ':app', ':openapijson'
+include ':app', ':openapijson', ':logindb'
